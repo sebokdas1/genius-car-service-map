@@ -4,7 +4,7 @@ const AddService = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/service`;
+        const url = `https://infinite-earth-00336.herokuapp.com/service`;
         fetch(url, {
             method: 'post',
             headers: {
